@@ -1,0 +1,330 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Playfair Display;   
+}
+a, p, .btn-category, label{
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    color: #e0e0e0d8;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid #ffc10742;
+    background-color: #121629c7;
+    backdrop-filter: blur(10px);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.logo{
+    color: #FFC107;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo i{
+    background: linear-gradient(to bottom right,#f7bf32, #FFC107);
+    font-size: 25px;
+    padding: 9px 12px;
+    border-radius: 10px;
+    margin-right: 13px;
+    color: #111;
+}
+ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+    padding: 2px 4px;
+}
+ul li:hover{
+    background-color: #eeeeee1e;
+    border-radius: 5px;
+}
+
+
+.navbar ul li i{
+    color: #ffffffc9;
+}
+ul .active{
+    background-color: #FFC107;
+    border-radius: 5px;
+    
+    color: #fff;
+}
+.active{
+    background-color: #FFC107;
+    border-radius: 5px;
+    padding: 1px 5px;
+    color: #fff;
+}
+i{
+    transition: 0.2s;
+}
+.section1{
+    height: 80vh;
+    width: 100%;
+    position: relative;
+    background: linear-gradient(to bottom ,#121629 60%,#121629ee);
+}
+section{
+    width: 100%;
+    position: relative;
+    padding: 50px 20px;
+}
+.text1{
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    margin: auto;
+}
+.text1 h1{
+    background: linear-gradient(to left,#fff87d, #FFC107); 
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 68px;
+    letter-spacing: 1px;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+.text1 p{
+    color: #e0e0e0e5 ; 
+    font-size: 20px;
+    width: 75%;
+    text-align: center;
+    margin: auto;
+}
+.data{
+    border: 1px solid #f7bf3242;
+    padding: 20px;
+    border-radius: 15px;
+    transition: 0.5s;
+    background-color: #20253d69;
+   
+}
+.data:hover i {   
+    box-shadow: 
+        0 0 15px rgba(255, 193, 7, 0.9), 
+        0 0 30px rgba(255, 193, 7, 0.6),
+        0 0 50px rgba(255, 152, 0, 0.3);    
+}
+.data:hover{
+    border: 1px solid #f8e802c5;
+}
+.data h4{
+    color: #f8e802;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 13px 0;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.data p{
+    color: #ffffff96;
+    width: 80%;
+    font-size: 14px;
+}
+.data i{
+    background: linear-gradient(to bottom right,#f7bf32, #faa200);
+    font-size: 25px;
+    padding: 9px 12px;
+    border-radius: 10px;
+    margin-right: 13px;
+    color: #111;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.info, .one, .tow,.three{
+    border: 1px solid #f7bf3242;
+    padding: 30px;
+    border-radius: 15px;
+    
+}
+.info h2, .section2 h2{
+    background: linear-gradient(to left,#fff87d, #FFC107); 
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+label{
+    color: #FFD700;
+    font-weight: 600;
+    font-size: 14px;
+    margin: 15px 0px;
+}
+input, select{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #f7bf3242;
+    border-radius:15px;
+    font-family: inherit;
+    transition: 0.2s;
+    outline: none;
+    background-color: #121629;
+}
+textarea {
+    width: 100%;           
+    padding: 12px;
+    border: 1px solid #f7bf3242;
+    border-radius:15px;    
+    font-family: inherit;  
+    resize: vertical;      
+    background-color: #121629;
+    outline: none;         
+}
+
+textarea:focus, input:focus{
+    border-color: #FFC107;
+    box-shadow: 0 0 5px rgba(255, 193, 7, 0.5);
+}
+form button{
+    justify-content: center;
+    align-items: center;
+    background-color: #FFD700;
+    border-radius: 15px;
+    cursor: pointer;
+    color: #121629;
+    font-weight: 600;
+    padding: 12px;
+    outline: none;
+    border: none;
+    transition: 0.3s;
+}
+form button:hover{
+   box-shadow: 0 0 5px rgba(255, 193, 7, 0.5);
+}
+select{
+    color: #e0e0e0e5;
+    cursor: pointer;
+    padding: 15px;
+}
+select option{
+    background-color: #121629;
+}
+.tow, .three{
+    margin: auto;
+    text-align: center;
+
+}
+.one{
+    padding: 120px auto;
+    text-align: center;
+    
+    /* background-color: #121629; */
+    background-image: linear-gradient( #121629bb 1px , transparent 1px),
+     linear-gradient(90deg , #121629bb 1px , transparent 1px);
+
+    background-size: 40px 40px;
+} 
+.one i{
+    font-size: 80px;
+    color: #FFC107;
+    margin-bottom: 15px;
+}
+.one p{
+    color: #e0e0e0cb;
+}
+.acounts{
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.acounts h5{
+    width: 48%;
+    padding: 15px;
+    border: 1px solid #f7bf3242;
+    border-radius:15px;
+    font-family: inherit;
+    transition: 0.5s;
+    outline: none;
+    background-color: #121629;
+    color: #ffffffc7;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    transition: 0.5s;
+}
+/* .acounts h5:hover{
+    color: #FFC107;
+} */
+.acounts h5 i{
+    color: #FFC107;
+    margin-right: 15px;
+    transition: 0.2s;
+
+}
+.questions{
+    display: block;
+    margin: 50px auto;
+    
+}
+.questions button{
+    width: 80%;
+    padding: 20px;
+    border: 1px solid #f7bf3242;
+    border-radius:15px;
+    resize: vertical;
+    outline: none;
+    display: block;
+    margin: auto;
+    font-size: 18px;
+    color: #f8e802;
+    cursor: pointer;
+    transition:0.5s ;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #1c1f30;
+}
+.questions button:hover{
+    border: 1px solid #f8bb20;
+}
+.questions button p{
+    margin: 15px 0px;
+    color: #ffffff96;
+    width: 80%;
+    margin: auto;
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.25;
+}
+footer{
+    background-color: #0a0f20;
+    padding:50px 60px;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+footer p , .footer p{
+    color: #eeeeee9d;
+}
+.foot{
+    width: 35%;
+}
+.quick-links h4, .number h4{
+    color: #f7b612;
+    font-size: 20px;
+}
+.quick-links ul li a, .number ul li{
+    color: #eeeeee9d;
+    line-height: 1.75;
+}
+.quick-links, .number{
+    margin-right: 70px;
+
+}
+.footer{
+    background-color: #0a0f20;
+    padding: 1px;
+    text-align: center;
+}

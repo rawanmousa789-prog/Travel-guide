@@ -1,0 +1,649 @@
+<!DOCTYPE html5>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tours page</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/tours.css">
+</head>
+<body>
+    <header class="navbar-expand-lg">
+        <nav class="navbar container">
+            <div  class="logo d-flex">
+                <i class="fa fa-plane" aria-hidden="true"></i>
+                <div class="logo-text">
+                    <h3 style="background: linear-gradient(to right,#f1ec9b, #FFD700 ); 
+                        background-clip: text;
+                        -webkit-background-clip: text;
+                        color: transparent;">Luxe Voyage</h3>
+                    <h6>LUXURY TRAVEL</h6>
+                </div>
+            </div>
+            <ul class="nav navbar-nav">
+                            <li class="nav-item"><i class="fa fa-plane" aria-hidden="true"></i><a class="nav-link" href="home.html" style="color: #e0e0e0d8; font-size: 15px;">Home</a></li>
+
+                            <li class="nav-item" ><i class="fa fa-map-marker" aria-hidden="true"></i><a class="nav-link" href="Destinations.html" style="font-size: 15px; color: #e0e0e0d8;">Destinations</a></li>
+
+                            <li class="nav-item active" style="background-color: #FFC107;
+                            border-radius: 10px;
+                            padding: 0px 15px;"><i class="fa fa-map-o" aria-hidden="true" style="color: #222";></i><a class="nav-link" href="tours.html" style="color: #222; font-size: 15px;
+                            font-weight: 600;">Tours</a></li>
+
+                            <li class="nav-item"><i class="fa fa-envelope-o" aria-hidden="true"></i><a class="nav-link" href="contact.html" style="color: #e0e0e0d8; font-size: 15px;">Contact</a></li>
+
+                        </ul>            
+        </nav>
+    </header>
+
+    <section class="section1">
+        <div class="text1">
+            <h1>Luxury Tours</h1>
+            <p>Curated travel experiences with exceptional service, expert guides, and unforgettable memories</p>
+        </div>
+    </section>
+    <section>
+
+        <div class="nav2">
+    
+            <div id="category-filters" class="d-flex">
+                <h3>Tour Category</h3>
+                <button class="btn-category active" data-filter-group="category" data-filter="all">All</button>
+                <button class="btn-category" data-filter-group="category" data-filter="beach"> Beach & Island</button>
+                <button class="btn-category" data-filter-group="category" data-filter="city">City Tours</button>
+                <button class="btn-category" data-filter-group="category" data-filter="adventure">Adventure</button>
+                <button class="btn-category" data-filter-group="category" data-filter="cultural">Cultural</button>
+                <button class="btn-category" data-filter-group="category" data-filter="romantic">Romantic</button>
+            </div>
+
+            
+            <div id="price-filters" class="d-flex">
+                <h3>Price Range</h3>
+                <button class="btn-category active" data-filter-group="price" data-filter="all">All</button>
+                <button class="btn-category" data-filter-group="price" data-filter="under-2000$">Under 2000$</button>
+                <button class="btn-category" data-filter-group="price" data-filter="2000$-to-5000$">2000$-5000$</button>
+                <button class="btn-category" data-filter-group="price" data-filter="above-5000$">Above 5000$</button>
+            </div>
+        </div>
+
+        <!-- رسالة عدم وجود نتائج -->
+    <div class="no-results" id="no-results" style="display: none;">
+        ❌ لا توجد رحلات تطابق معايير البحث الخاصة بك
+    </div>
+
+        <div class="container-items p-3">
+            <div class="row" style="margin-top: 30px;">
+                <div class="col-lg-6" data-category="romantic" data-price="2000$-to-5000$">
+                    <div class="item d-flex">
+                        <div class="img1">
+                            <h5><i class="fa fa-star" aria-hidden="true"></i> 4.9</h5>
+
+                        </div>
+                        <div class="conect">
+                            <h3>Paris Luxury Experience</h3>
+                            <span>Paris, France</span>
+                            <div class="box d-flex mt-2">
+                                <h6><i class="fa fa-clock-o" aria-hidden="true"></i> 7 Days</h6>
+                                <h6><i class="fa fa-users" aria-hidden="true"></i> 2-8 People</h6>
+                            </div>
+                            <div class="box d-flex ">
+                                <h6><i class="fa fa-calendar-o" aria-hidden="true"></i> Year Round</h6>
+                                <h6 style="color: #FFC107; background-color: #ffc10756;
+                                padding: 8px 15px; border-radius: 5px;">Romantic</h6>
+                            </div>
+                            <span>Included:</span>
+                            <ul class="d-flex mt-2">
+                                <li><i class="fa fa-check" aria-hidden="true"></i> 5-Star Hotel</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> All Meals</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> Private Guide</li>
+                            </ul>
+                            <hr style="background-color: #ffc10742;">
+                            <div class="end d-flex">
+                                <div class="start-price">
+                                    <span>Starting from :</span>
+                                    <h3>3,499$</h3>
+                                </div>
+                                <button><a href="#">Book Now</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6" data-category="city" data-price="under-2000$">
+                    <div class=" item d-flex">
+                        <div class="img2">
+                            <h5><i class="fa fa-star" aria-hidden="true"></i> 4.8</h5>
+
+                        </div>
+                        
+                        <div class="conect mt-1">
+                            <h3>Dubai Desert & City</h3>
+                            <span>Dubai, UAE</span>
+                            <div class="box d-flex mt-2">
+                                <h6><i class="fa fa-clock-o" aria-hidden="true"></i> 5 Days</h6>
+                                <h6><i class="fa fa-users" aria-hidden="true"></i> 2-10 People</h6>
+                            </div>
+                            <div class="box d-flex ">
+                                <h6><i class="fa fa-calendar-o" aria-hidden="true"></i> Year Round</h6>
+                                <h6 style="color: #FFC107; background-color: #ffc10756;
+                                padding: 8px 15px; border-radius: 5px;">City Tours</h6>
+                            </div>
+                            <span>Included:</span>
+                            <ul class="d-flex mt-2">
+                                <li><i class="fa fa-check" aria-hidden="true"></i> Luxury Hotel</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> Desert Safari</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> City Tour</li>
+                            </ul>
+                            <hr style="background-color: #ffc10742;">
+                            <div class="end d-flex">
+                                <div class="start-price">
+                                    <span>Starting from :</span>
+                                    <h3>$2,899</h3>
+                                </div>
+                                <button><a href="#">Book Now</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mt-2" data-category="beach" data-price="above-5000$">
+                    <div class="item d-flex" >
+                        <div class="img3">
+                           <h5><i class="fa fa-star" aria-hidden="true"></i> 5</h5> 
+                        </div>
+                        
+                        
+                        <div class="conect">
+                            <h3>Maldives Paradise</h3>
+                            <span>Maldives</span>
+                            <div class="box d-flex mt-2">
+                                <h6><i class="fa fa-clock-o" aria-hidden="true"></i> 10 Days</h6>
+                                <h6><i class="fa fa-users" aria-hidden="true"></i> 2-6 People</h6>
+                            </div>
+                            <div class="box d-flex ">
+                                <h6><i class="fa fa-calendar-o" aria-hidden="true"></i> Year Round</h6>
+                                <h6 style="color: #FFC107; background-color: #ffc10756;
+                                padding: 8px 15px; border-radius: 5px;">Beach & Island</h6>
+                            </div>
+                            <span>Included:</span>
+                            <ul class="d-flex mt-2">
+                                <li><i class="fa fa-check" aria-hidden="true"></i> Overwater Villa</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> All-Inclusive</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> Spa Treatments</li>
+                            </ul>
+                            <hr style="background-color: #ffc10742;">
+                            <div class="end d-flex">
+                                <div class="start-price">
+                                    <span>Starting from :</span>
+                                    <h3>$5,999</h3>
+                                </div>
+                                <button><a href="#">Book Now</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mt-2" data-category="cultural" data-price="2000$-to-5000$">
+                    <div class="item d-flex">
+                        <div class="img4">
+                           <h5><i class="fa fa-star" aria-hidden="true"></i> 4.9</h5> 
+                        </div>
+                        
+                        
+                        <div class="conect">
+                            <h3>Tokyo Cultural Journey</h3>
+                            <span>Tokyo, Japan</span>
+                            <div class="box d-flex mt-2">
+                                <h6><i class="fa fa-clock-o" aria-hidden="true"></i> 8 Days</h6>
+                                <h6><i class="fa fa-users" aria-hidden="true"></i> 4-12 People</h6>
+                            </div>
+                            <div class="box d-flex ">
+                                <h6><i class="fa fa-calendar-o" aria-hidden="true"></i> Year Round</h6>
+                                <h6 style="color: #FFC107; background-color: #ffc10756;
+                                padding: 8px 15px; border-radius: 5px;">Cultural</h6>
+                            </div>
+                            <span>Included:</span>
+                            <ul class="d-flex mt-2">
+                                <li><i class="fa fa-check" aria-hidden="true"></i> Boutique Hotel</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> Traditional Meals</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> Temple Tours</li>
+                            </ul>
+                            <hr style="background-color: #ffc10742;">
+                            <div class="end d-flex">
+                                <div class="start-price">
+                                    <span>Starting from :</span>
+                                    <h3>$3,799</h3>
+                                </div>
+                                <button><a href="#">Book Now</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mt-2" data-category="romantic" data-price="under-2000$">
+                    <div class="item d-flex" >
+                        <div class="img5">
+                           <h5><i class="fa fa-star" aria-hidden="true"></i> 4.7</h5> 
+                        </div>
+                        
+                        
+                        <div class="conect">
+                            <h3>Santorini Romantic Escape</h3>
+                            <span>Santorini, Greece</span>
+                            <div class="box d-flex mt-2">
+                                <h6><i class="fa fa-clock-o" aria-hidden="true"></i> 6 Days</h6>
+                                <h6><i class="fa fa-users" aria-hidden="true"></i> 2-4 People</h6>
+                            </div>
+                            <div class="box d-flex ">
+                                <h6><i class="fa fa-calendar-o" aria-hidden="true"></i> Year Round</h6>
+                                <h6 style="color: #FFC107; background-color: #ffc10756;
+                                padding: 8px 15px; border-radius: 5px;">Romantic</h6>
+                            </div>
+                            <span>Included:</span>
+                            <ul class="d-flex mt-2">
+                                <li><i class="fa fa-check" aria-hidden="true"></i> Cave Hotel</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> Sunset Cruise</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> Wine Tasting</li>
+                            </ul>
+                            <hr style="background-color: #ffc10742;">
+                            <div class="end d-flex">
+                                <div class="start-price">
+                                    <span>Starting from :</span>
+                                    <h3>$2,999</h3>
+                                </div>
+                                <button><a href="#">Book Now</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mt-2" data-category="cultural" data-price="above-5000$">
+                    <div class="item d-flex" >
+                        <div class="img6">
+                           <h5><i class="fa fa-star" aria-hidden="true"></i> 4.9</h5> 
+                        </div>
+                        
+                        
+                        <div class="conect">
+                            <h3>Bali Wellness Retreat</h3>
+                            <span>Bali, Indonesia</span>
+                            <div class="box d-flex mt-2">
+                                <h6><i class="fa fa-clock-o" aria-hidden="true"></i> 9 Days</h6>
+                                <h6><i class="fa fa-users" aria-hidden="true"></i> 2-8 People</h6>
+                            </div>
+                            <div class="box d-flex ">
+                                <h6><i class="fa fa-calendar-o" aria-hidden="true"></i> Year Round</h6>
+                                <h6 style="color: #FFC107; background-color: #ffc10756;
+                                padding: 8px 15px; border-radius: 5px;">Cultural</h6>
+                            </div>
+                            <span>Included:</span>
+                            <ul class="d-flex mt-2">
+                                <li><i class="fa fa-check" aria-hidden="true"></i> Luxury Villa</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> Yoga Classes</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> Spa Treatments</li>
+                            </ul>
+                            <hr style="background-color: #ffc10742;">
+                            <div class="end d-flex">
+                                <div class="start-price">
+                                    <span>Starting from :</span>
+                                    <h3>$2,499</h3>
+                                </div>
+                                <button><a href="#">Book Now</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mt-2" data-category="adventure" data-price="2000$-to-5000$">
+                    <div class="item d-flex">
+                        <div class="img7">
+                           <h5><i class="fa fa-star" aria-hidden="true"></i> 5</h5> 
+                        </div>
+                        
+                        
+                        <div class="conect">
+                            <h3>Swiss Alps Adventure</h3>
+                            <span>Switzerland</span>
+                            <div class="box d-flex mt-2">
+                                <h6><i class="fa fa-clock-o" aria-hidden="true"></i> 7 Days</h6>
+                                <h6><i class="fa fa-users" aria-hidden="true"></i> 4-10 People</h6>
+                            </div>
+                            <div class="box d-flex ">
+                                <h6><i class="fa fa-calendar-o" aria-hidden="true"></i> Year Round</h6>
+                                <h6 style="color: #FFC107; background-color: #ffc10756;
+                                padding: 8px 15px; border-radius: 5px;">Adventure</h6>
+                            </div>
+                            <span>Included:</span>
+                            <ul class="d-flex mt-2">
+                                <li><i class="fa fa-check" aria-hidden="true"></i> Mountain Lodge</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> Ski Pass</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> Equipment</li>
+                            </ul>
+                            <hr style="background-color: #ffc10742;">
+                            <div class="end d-flex">
+                                <div class="start-price">
+                                    <span>Starting from :</span>
+                                    <h3>$4,299</h3>
+                                </div>
+                                <button><a href="#">Book Now</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mt-2" data-category="beach" data-price="2000$-to-5000$">
+                    <div class="item d-flex">
+                        <div class="img8">
+                           <h5><i class="fa fa-star" aria-hidden="true"></i> 4.8</h5> 
+                        </div>
+                        
+                        
+                        <div class="conect">
+                            <h3>Caribbean Beach Bliss</h3>
+                            <span>Caribbean</span>
+                            <div class="box d-flex mt-2">
+                                <h6><i class="fa fa-clock-o" aria-hidden="true"></i> 8 Days</h6>
+                                <h6><i class="fa fa-users" aria-hidden="true"></i> 2-6 People</h6>
+                            </div>
+                            <div class="box d-flex ">
+                                <h6><i class="fa fa-calendar-o" aria-hidden="true"></i> Year Round</h6>
+                                <h6 style="color: #FFC107; background-color: #ffc10756;
+                                padding: 8px 15px; border-radius: 5px;">Beach & Island</h6>
+                            </div>
+                            <span>Included:</span>
+                            <ul class="d-flex mt-2">
+                                <li><i class="fa fa-check" aria-hidden="true"></i> Beachfront Resort</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> All-Inclusive</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> Water Activities</li>
+                            </ul>
+                            <hr style="background-color: #ffc10742;">
+                            <div class="end d-flex">
+                                <div class="start-price">
+                                    <span>Starting from :</span>
+                                    <h3>$3,299</h3>
+                                </div>
+                                <button><a href="#">Book Now</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mt-2" data-category="adventure" data-price="under-2000$">
+                    <div class="item d-flex">
+                        <div class="img9">
+                           <h5><i class="fa fa-star" aria-hidden="true"></i> 4.9</h5> 
+                        </div>
+                        
+                        
+                        <div class="conect">
+                            <h3>Mountain Hiking Expedition</h3>
+                            <span>Nepal</span>
+                            <div class="box d-flex mt-2">
+                                <h6><i class="fa fa-clock-o" aria-hidden="true"></i> 12 Days</h6>
+                                <h6><i class="fa fa-users" aria-hidden="true"></i> 6-12 People</h6>
+                            </div>
+                            <div class="box d-flex ">
+                                <h6><i class="fa fa-calendar-o" aria-hidden="true"></i> Year Round</h6>
+                                <h6 style="color: #FFC107; background-color: #ffc10756;
+                                padding: 8px 15px; border-radius: 5px;">Adventure</h6>
+                            </div>
+                            <span>Included:</span>
+                            <ul class="d-flex mt-2">
+                                <li><i class="fa fa-check" aria-hidden="true"></i> Lodge Accommodation</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> All Meals</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> Expert Guide</li>
+                            </ul>
+                            <hr style="background-color: #ffc10742;">
+                            <div class="end d-flex">
+                                <div class="start-price">
+                                    <span>Starting from :</span>
+                                    <h3>$1,899</h3>
+                                </div>
+                                <button><a href="#">Book Now</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mt-2" data-category="cultural" data-price="under-2000$">
+                    <div class="item d-flex">
+                        <div class="img10">
+                           <h5><i class="fa fa-star" aria-hidden="true"></i> 4.8</h5> 
+                        </div>
+                        
+                        
+                        <div class="conect">
+                            <h3>Tarabzon</h3>
+                            <span>Turkish</span>
+                            <div class="box d-flex mt-2">
+                                <h6><i class="fa fa-clock-o" aria-hidden="true"></i> 6 Days</h6>
+                                <h6><i class="fa fa-users" aria-hidden="true"></i> 2-6 People</h6>
+                            </div>
+                            <div class="box d-flex ">
+                                <h6><i class="fa fa-calendar-o" aria-hidden="true"></i> Year Round</h6>
+                                <h6 style="color: #FFC107; background-color: #ffc10756;
+                                padding: 8px 15px; border-radius: 5px;">Romantic</h6>
+                            </div>
+                            <span>Included:</span>
+                            <ul class="d-flex mt-2">
+                                <li><i class="fa fa-check" aria-hidden="true"></i> Cave Hotel</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> All-Inclusive</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> Expert Guide</li>
+                            </ul>
+                            <hr style="background-color: #ffc10742;">
+                            <div class="end d-flex">
+                                <div class="start-price">
+                                    <span>Starting from :</span>
+                                    <h3>$1,299</h3>
+                                </div>
+                                <button><a href="#">Book Now</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mt-2" data-category="romantic" data-price="2000$-to-5000$">
+                    <div class="item d-flex">
+                        <div class="img11">
+                           <h5><i class="fa fa-star" aria-hidden="true"></i> 5</h5> 
+                        </div>
+                        
+                        
+                        <div class="conect">
+                            <h3>London</h3>
+                            <span>Italy</span>
+                            <div class="box d-flex mt-2">
+                                <h6><i class="fa fa-clock-o" aria-hidden="true"></i> 6 Days</h6>
+                                <h6><i class="fa fa-users" aria-hidden="true"></i> 2-6 People</h6>
+                            </div>
+                            <div class="box d-flex ">
+                                <h6><i class="fa fa-calendar-o" aria-hidden="true"></i> Year Round</h6>
+                                <h6 style="color: #FFC107; background-color: #ffc10756;
+                                padding: 8px 15px; border-radius: 5px;">Romantic</h6>
+                            </div>
+                            <span>Included:</span>
+                            <ul class="d-flex mt-2">
+                                <li><i class="fa fa-check" aria-hidden="true"></i> 5-Star Hotel</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> All Meals</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> Private Guide</li>
+                            </ul>
+                            <hr style="background-color: #ffc10742;">
+                            <div class="end d-flex">
+                                <div class="start-price">
+                                    <span>Starting from :</span>
+                                    <h3>$4,299</h3>
+                                </div>
+                                <button><a href="#">Book Now</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mt-2" data-category="city" data-price="above-5000$">
+                    <div class="item d-flex">
+                        <div class="img12">
+                           <h5><i class="fa fa-star" aria-hidden="true"></i> 4.9</h5> 
+                        </div>
+                        
+                        
+                        <div class="conect">
+                            <h3>Hong Kong</h3>
+                            <span>China</span>
+                            <div class="box d-flex mt-2">
+                                <h6><i class="fa fa-clock-o" aria-hidden="true"></i> 8 Days</h6>
+                                <h6><i class="fa fa-users" aria-hidden="true"></i> 2-10 People</h6>
+                            </div>
+                            <div class="box d-flex ">
+                                <h6><i class="fa fa-calendar-o" aria-hidden="true"></i> Year Round</h6>
+                                <h6 style="color: #FFC107; background-color: #ffc10756;
+                                padding: 8px 15px; border-radius: 5px;">City Tours</h6>
+                            </div>
+                            <span>Included:</span>
+                            <ul class="d-flex mt-2">
+                                <li><i class="fa fa-check" aria-hidden="true"></i> Boutique Hotel</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> All-Inclusive</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> Wine Tasting</li>
+                            </ul>
+                            <hr style="background-color: #ffc10742;">
+                            <div class="end d-flex">
+                                <div class="start-price">
+                                    <span>Starting from :</span>
+                                    <h3>$5,199</h3>
+                                </div>
+                                <button><a href="#">Book Now</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mt-2" data-category="beach" data-price="under-2000$">
+                    <div class="item d-flex">
+                        <div class="img13">
+                           <h5><i class="fa fa-star" aria-hidden="true"></i> 5</h5> 
+                        </div>
+                        
+                        
+                        <div class="conect">
+                            <h3>Dead Sea</h3>
+                            <span>Palestine</span>
+                            <div class="box d-flex mt-2">
+                                <h6><i class="fa fa-clock-o" aria-hidden="true"></i> 4 Days</h6>
+                                <h6><i class="fa fa-users" aria-hidden="true"></i> 4-12 People</h6>
+                            </div>
+                            <div class="box d-flex ">
+                                <h6><i class="fa fa-calendar-o" aria-hidden="true"></i> Year Round</h6>
+                                <h6 style="color: #FFC107; background-color: #ffc10756;
+                                padding: 8px 15px; border-radius: 5px;">Beach & Island</h6>
+                            </div>
+                            <span>Included:</span>
+                            <ul class="d-flex mt-2">
+                                <li><i class="fa fa-check" aria-hidden="true"></i> Overwater Villa</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> Traditional Meals</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> Spa Treatments</li>
+                            </ul>
+                            <hr style="background-color: #ffc10742;">
+                            <div class="end d-flex">
+                                <div class="start-price">
+                                    <span>Starting from :</span>
+                                    <h3>$1,399</h3>
+                                </div>
+                                <button><a href="#">Book Now</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 mt-2" data-category="adventure" data-price="above-5000$">
+                    <div class="item d-flex">
+                        <div class="img14">
+                           <h5><i class="fa fa-star" aria-hidden="true"></i> 4.7</h5> 
+                        </div>
+                        
+                        
+                        <div class="conect">
+                            <h3>Riyadh Desert</h3>
+                            <span>Al Soudia Arabia</span>
+                            <div class="box d-flex mt-2">
+                                <h6><i class="fa fa-clock-o" aria-hidden="true"></i> 6 Days</h6>
+                                <h6><i class="fa fa-users" aria-hidden="true"></i> 4-10 People</h6>
+                            </div>
+                            <div class="box d-flex ">
+                                <h6><i class="fa fa-calendar-o" aria-hidden="true"></i> Year Round</h6>
+                                <h6 style="color: #FFC107; background-color: #ffc10756;
+                                padding: 8px 15px; border-radius: 5px;">Adventure</h6>
+                            </div>
+                            <span>Included:</span>
+                            <ul class="d-flex mt-2">
+                                <li><i class="fa fa-check" aria-hidden="true"></i> Boutique Hotel</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> All Meals</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> Equipmen</li>
+                            </ul>
+                            <hr style="background-color: #ffc10742;">
+                            <div class="end d-flex">
+                                <div class="start-price">
+                                    <span>Starting from :</span>
+                                    <h3>$5,000</h3>
+                                </div>
+                                <button><a href="#">Book Now</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            
+            
+        </div>
+    </section>
+
+    <footer class="d-flex">
+        <div class="foot">
+            <div  class="logo d-flex" style="justify-content: flex-start; align-items: center;">
+                <i class="fa fa-plane" aria-hidden="true" style="font-size: 20px;"></i>
+                
+                    <h3 style="background: linear-gradient(to right,#f1ec9b, gold); 
+                        background-clip: text;
+                        -webkit-background-clip: text;
+                        color: transparent;
+                        font-size: 20px;">Luxe Voyage</h3>
+            </div>
+            <br>
+            <p>Experience the world in luxury. We curate exceptional travel experiences to the most breathtaking destinations around the globe.</p>
+        </div>
+        <div class="quick-links">           
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#">Destinations</a></li>
+                <li><a href="#">Tours</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="number" style="margin-top: -30px;">
+            <h4>Contact</h4>
+            <ul>
+                <li>+1 (555) 123-4567</li>
+                <li>info@luxevoyage.com</li>
+                <li>New York, NY 10001</li>
+            </ul>
+        </div>
+
+    </footer>
+    <div class="footer">
+        <hr style="background-color: #f8b60252; width: 90%; margin: auto;">
+        <br>
+        <p>© 2026 Luxe Voyage. All rights reserved.</p>
+        <br>
+    </div>
+
+    
+    
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/tours.js"></script>
+</body>
+</html>

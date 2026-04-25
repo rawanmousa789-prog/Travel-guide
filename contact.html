@@ -1,0 +1,237 @@
+<!DOCTYPE html5>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact page</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+
+    <header class="navbar-expand-lg">
+        <nav class="navbar container">
+            <div  class="logo d-flex">
+                <i class="fa fa-plane" aria-hidden="true"></i>
+                <div class="logo-text">
+                    <h3 style="background: linear-gradient(to right,#f1ec9b, #FFD700 ); 
+                        background-clip: text;
+                        -webkit-background-clip: text;
+                        color: transparent;">Luxe Voyage</h3>
+                    <h6>LUXURY TRAVEL</h6>
+                </div>
+            </div>
+            <ul class="nav navbar-nav">
+                            <li class="nav-item "><i class="fa fa-plane" aria-hidden="true";></i><a class="nav-link" href="home.html" style="color: #e0e0e0d8; font-size: 15px;">Home</a></li>
+
+                            <li class="nav-item" ><i class="fa fa-map-marker" aria-hidden="true"></i><a class="nav-link" href="Destinations.html" style="font-size: 15px; color: #e0e0e0d8;">Destinations</a></li>
+
+                            <li class="nav-item " ><i class="fa fa-map-o" aria-hidden="true"></i><a class="nav-link" href="tours.html" style="color: #e0e0e0d8; font-size: 15px;">Tours</a></li>
+
+                            <li class="nav-item active" style="background-color: #FFC107;border-radius: 10px;padding: 0px 15px;"><i class="fa fa-envelope-o" aria-hidden="true" style="color: #222"></i><a class="nav-link" href="contact.html" style="color: #222; font-size: 15px; font-weight: 600;">Contact</a></li>
+
+                        </ul>           
+        </nav>
+    </header>
+
+    <section class="section1">
+        <div class="text1">
+            <h1>Get In Touch</h1>
+            <p>Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible</p>        
+        </div>
+    </section>
+    <section  style="padding: 70px 20px; background-color: #121629;">
+        <div class="row">
+            <div class="col-lg-3 hover-box" onmouseover="hoverBoxs()">
+                <div class="data">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    <h4>Visit Us</h4>
+                    <p>123 Luxury Avenue
+                        <br>
+                        New York, NY 10001
+                        <br>
+                        United States</p>
+                </div>
+            </div>
+            <div class="col-lg-3 hover-box">
+                <div class="data ">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <h4>Call Us</h4>
+                    <p>+1 (555) 123-4567
+                        <br>
+                        +1 (555) 987-6543
+                        <br>
+                        24/7 Support</p>
+                </div>
+            </div>
+            <div class="col-lg-3 hover-box">
+                <div class="data">
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    <h4>Email Us</h4>
+                    <p>info@luxevoyage.com
+                        <br>
+                        support@luxevoyage.com
+                        <br>
+                        bookings@luxevoyage.com</p>
+                </div>
+            </div>
+            <div class="col-lg-3 hover-box">
+                <div class="data">
+                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                    <h4>Working Hours</h4>
+                    <p>Monday - Friday: 9AM - 8PM
+                        <br>
+                        Saturday: 10AM - 6PM
+                        <br>
+                        Sunday: 10AM - 4PM</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="background-color: #20253d;">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="info p-4">
+                    <h2>Send Us a Message</h2>
+                    <form action="">
+                        <div>
+                            <label for="full-name">Full Name *</label><br>
+                            <input type="text" placeholder="Ali saad" id="full-name" autocomplete="name" required>
+                        </div>
+                        <div>
+                            <label for="email">Email Address *</label><br>
+                            <input type="email" placeholder="ali@example.com" id="email" autocomplete="email" required>
+                        </div>
+                        <div>
+                            <label for="phone">Phone Number</label><br>
+                            <input type="text" placeholder="+ (970)000-0000" id="phone">
+                        </div>
+                        <div style="position: relative;">
+                            <label for="inquiry">Inquiry Type *</label><br>
+                                <select  id="inquiry" name="inquiry_type" required>
+                                    <option value="general" selected>General Inquiry</option>
+                                    <option value="booking">Booking Information</option>
+                                    <option value="support">Destination Questions</option>
+                                    <option value="support">Tour Packages</option>
+                                    <option value="support">Custmor Support</option>
+                                    <option value="other">Partnership Opportunities</option>
+                                </select>
+
+                        </div>
+                        <div class="">
+                            <label for="message">Message *</label><br>
+                            <textarea id="message" name="message" rows="5" cols="40" placeholder="Tell us about your dream vacation..."></textarea>
+
+                        </div>
+                        <br>
+                        <br>
+                       
+                            <button class="d-flex w-100" type="submit">
+                                Send Message
+                                <i class="fa fa-paper-plane-o" aria-hidden="true" style="color: #121629; justify-self: center; margin-left: 5px;"></i>
+                            </button>
+                            
+                        
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="boxs">
+                    <div class="one mb-4">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        <h4 style="color: #FFC107;">Find Us Here</h4>
+                        <p>123 Luxury Avenue
+                            <br>
+                            New York, NY 10001
+                        </p>
+                    </div>
+                    <div class="tow mb-4">
+                        
+                        <h4 style="color: #FFC107;">Connect With Us</h4>
+                        <div class="acounts d-flex">
+                            <h5 id="text1" onmouseover="hoverBox1()" onmouseleave="cancelHover1()"><i class="fa fa-facebook"></i>Facebook</h5>
+                            <h5 id="text2" onmouseover="hoverBox2()" onmouseleave="cancelHover2()"><i class="fa fa-instagram"></i>Instagram</h5>
+                            
+                            <h5 id="text3" onmouseover="hoverBox3()" onmouseleave="cancelHover3()"><i class="fa fa-twitter"></i>Twitter</h5>
+                            <h5 id="text4" onmouseover="hoverBox4()" onmouseleave="cancelHover4()"><i class="fa fa-linkedin"></i>Linkedin</h5>
+                        </div>
+                    </div>
+                    <div class="three text-left" style="background-color: #FFC107;">
+                        <h3 style="color: #121629;">Ready to Plan Your Trip?</h3>
+                        <p>Our travel experts are available to help you create the perfect luxury vacation experience.</p>
+                        <br>
+                        <h5 style="color: #121629;"><i class="fa fa-clock-o" aria-hidden="true"></i>  Available 24/7 for Emergencies</h5>
+                        <p>Regular hours: Mon-Fri 9AM-8PM, Sat 10AM-6PM, Sun 10AM-4PM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section2" style="padding: 70px 20px; background-color: #121629;">
+        <h2 class="text-center">Frequently Asked Questions</h2>
+        <div class="questions">
+            <button class="dropdown-toggle" data-toggle="collapse" data-target="#answer1">How do I book a tour?
+            <p class="collapse" id="answer1">You can book directly through our website, call us, or visit our office. Our team will guide you through the entire process.</p></button>
+
+            <button class="dropdown-toggle" data-toggle="collapse" data-target="#answer2">What is your cancellation policy?
+            <p class="collapse" id="answer2">We offer flexible cancellation up to 30 days before departure with full refund. Contact us for specific tour policies.</p></button>
+
+            <button class="dropdown-toggle" data-toggle="collapse" data-target="#answer3">Do you offer travel insurance?
+            <p class="collapse" id="answer3">Yes, we highly recommend travel insurance and can help you arrange comprehensive coverage for your trip.</p></button>
+
+            <button class="dropdown-toggle" data-toggle="collapse" data-target="#answer4">Can you customize tours?
+            <p class="collapse" id="answer4">Absolutely! We specialize in creating bespoke luxury travel experiences tailored to your preferences.</p></button>
+
+        </div>
+    </section>
+
+    <footer class="d-flex">
+        <div class="foot">
+            <div  class="logo d-flex" style="justify-content: flex-start; align-items: center;">
+                <i class="fa fa-plane" aria-hidden="true" style="font-size: 20px;"></i>
+                
+                    <h3 style="background: linear-gradient(to right,#f1ec9b, gold); 
+                        background-clip: text;
+                        -webkit-background-clip: text;
+                        color: transparent;
+                        font-size: 20px;">Luxe Voyage</h3>
+            </div>
+            <br>
+            <p>Experience the world in luxury. We curate exceptional travel experiences to the most breathtaking destinations around the globe.</p>
+        </div>
+        <div class="quick-links">           
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#">Destinations</a></li>
+                <li><a href="#">Tours</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="number" style="margin-top: -30px;">
+            <h4>Contact</h4>
+            <ul>
+                <li>+1 (555) 123-4567</li>
+                <li>info@luxevoyage.com</li>
+                <li>New York, NY 10001</li>
+            </ul>
+        </div>
+
+    </footer>
+    <div class="footer">
+        <hr style="background-color: #f8b60252; width: 90%; margin: auto;">
+        <br>
+        <p>© 2026 Luxe Voyage. All rights reserved.</p>
+        <br>
+    </div>
+    
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>
