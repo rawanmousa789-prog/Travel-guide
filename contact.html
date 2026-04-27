@@ -11,30 +11,30 @@
 </head>
 <body>
 
-    <header class="navbar-expand-lg">
-        <nav class="navbar container">
-            <div  class="logo d-flex">
-                <i class="fa fa-plane" aria-hidden="true"></i>
-                <div class="logo-text">
-                    <h3 style="background: linear-gradient(to right,#f1ec9b, #FFD700 ); 
-                        background-clip: text;
-                        -webkit-background-clip: text;
-                        color: transparent;">Luxe Voyage</h3>
-                    <h6>LUXURY TRAVEL</h6>
-                </div>
-            </div>
-            <ul class="nav navbar-nav">
-                            <li class="nav-item "><i class="fa fa-plane" aria-hidden="true";></i><a class="nav-link" href="index.html" style="color: #e0e0e0d8; font-size: 15px;">Home</a></li>
+    <header>
+  <nav class="navbar">
+    <a class="logo" href="#">
+      <i class="fa fa-plane"></i>
+      <div class="logo-text">
+        <h3>Luxe Voyage</h3>
+        <h6>LUXURY TRAVEL</h6>
+      </div>
+    </a>
 
-                            <li class="nav-item" ><i class="fa fa-map-marker" aria-hidden="true"></i><a class="nav-link" href="Destinations.html" style="font-size: 15px; color: #e0e0e0d8;">Destinations</a></li>
+    <button class="navbar-toggler" onclick="toggleMenu()" id="toggler">
+      <i class="fa fa-bars" id="toggler-icon"></i>
+    </button>
 
-                            <li class="nav-item " ><i class="fa fa-map-o" aria-hidden="true"></i><a class="nav-link" href="tours.html" style="color: #e0e0e0d8; font-size: 15px;">Tours</a></li>
-
-                            <li class="nav-item active" style="background-color: #FFC107;border-radius: 10px;padding: 0px 15px;"><i class="fa fa-envelope-o" aria-hidden="true" style="color: #222"></i><a class="nav-link" href="contact.html" style="color: #222; font-size: 15px; font-weight: 600;">Contact</a></li>
-
-                        </ul>           
-        </nav>
-    </header>
+    <div class="nav-collapse" id="navMenu">
+      <ul class="nav-menu">
+        <li><a class="nav-item" href="index.html"><i class="fa fa-plane"></i> Home</a></li>
+        <li><a class="nav-item" href="Destinations.html"><i class="fa fa-map-marker"></i> Destinations</a></li>
+        <li><a class="nav-item" href="tours.html"><i class="fa fa-map-o"></i> Tours</a></li>
+        <li><a class="nav-item active" href="contact.html"><i class="fa fa-envelope-o"></i> Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
 
     <section class="section1">
         <div class="text1">
@@ -233,5 +233,6 @@
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/contact.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

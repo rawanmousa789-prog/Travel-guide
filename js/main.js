@@ -1,19 +1,14 @@
-let hoverBox = document.querySelector( '.hover-box');
-let hoverI =document.querySelector('.hover-i');
+function toggleMenu() {
+  const menu = document.getElementById('navMenu');
+  const icon = document.getElementById('toggler-icon');
+  menu.classList.toggle('open');
+  icon.className = menu.classList.contains('open') ? 'fa fa-times' : 'fa fa-bars';
+}
+
 let scrollBtn = document.querySelector('.scroll-btn');
 let btnDestinations =document.querySelector('.btn-Destinations');
 let iDestinations = document.querySelector('.fa-arrow-right');
 
-
-hoverBox.onmouseover =()=>{
-    hoverI.style.boxShadow = `
-        0 0 15px #ffc107e6, 
-        0 0 30px #ffc10799,
-        0 0 50px #ff98004d`;
-    }
-hoverBox.onmouseleave =()=>{
-    hoverI.style.boxShadow = 'none';
-    }
     
 btnDestinations.onmouseover=()=>{
     iDestinations.style.marginLeft ='7px';
