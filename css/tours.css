@@ -146,8 +146,25 @@ header {
         gap: 30px;
         margin: auto;
     }
-
-    
+    .btn-category{
+        font-size: 12px;
+        padding: 4px 8px;
+        gap: 5px;
+    }
+    .nav2{
+        padding: 10px;
+        
+    }
+    .contanier{
+        width: 95%;
+        margin: auto;
+    }
+    .item{
+        margin-bottom: 10px;
+    }
+    .item .img1{
+        height: 100%;
+    }
 }
 i{
     transition: 0.2s;
@@ -174,7 +191,7 @@ section{
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    font-size: 68px;
+    font-size: 4.9vw;
     letter-spacing: 1px;
     text-align: center;
     width: 50%;
@@ -182,7 +199,7 @@ section{
 }
 .text1 p{
     color: #e0e0e0e5 ; 
-    font-size: 20px;
+    font-size: 1.7vw;
     width: 75%;
     text-align: center;
     margin: auto;
@@ -207,16 +224,18 @@ section{
     margin-bottom: 15px;
 }
 #category-filters h3, #price-filters h3{
-    margin-right: 20px;
+    margin-right: 10px;
     color:#ffc107 ;
     font-size: 20px;
     letter-spacing: 1px;
 }
 #category-filters, #price-filters{
-   gap: 10px;
+   gap: 5px;
+   display: flex;
+   flex-wrap: wrap;
 }
 .btn-category{
-    padding: 7px 20px;
+    padding: 7px 14px;
     border: 1px solid #ffc10742;
     background-color: #2d3748;
     color: #f4f4f4;

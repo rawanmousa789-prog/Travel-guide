@@ -147,7 +147,34 @@ header {
         gap: 30px;
         margin: auto;
     }
-
+    .text1{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    right: 10%;
+    display: block;
+    margin: auto;
+    }
+    .nav2 {
+        display: flex;
+        flex-direction: column;
+        justify-content:center ;
+        gap: 10px;
+        width: 95%;
+    }
+    .inp{
+        width: 100%; 
+        
+    }
+    .filter-button{
+        width: 90%;
+        margin: auto;
+        text-align: center;
+    }
+    .btn{
+        gap: 10px;
+        margin-bottom: 10px;       
+    }
     
 }
 i{
@@ -168,20 +195,22 @@ section{
     position: absolute;
     top: 30%;
     left: 27%;
+    right: 10%;
+    display: block;
     margin: auto;
-    /* text-align: center; */
+    
 }
 .text1 h1{
     background: linear-gradient(to left,#fff87d, #FFC107); 
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    font-size: 68px;
+    font-size: 4.9vw;
     letter-spacing: 1px;
 }
 .text1 p{
     color: #e0e0e0e5 ; 
-    font-size: 20px;
+    font-size: 1.7vw;
     width: 70%;
     text-align: center;
 }
@@ -209,20 +238,20 @@ section{
     border: 1px solid #ffc10731;
     outline: none;
     border-radius: 10px;
-    padding: 10px;
+    padding: 12px;
     background-color: #121629fa;
     transition: 0.2s;
     width: 100%; 
 }
 .inp input::placeholder{
-    font-size: 20px;
-    
+    font-size: 1.7vw;
+    color: #e0e0e0b7;
     padding: 35px;
 }
 .inp i{
     position: absolute;
-    left: 20px;
-    top: 12px;
+    left: 3%;
+    top: 28%;
     font-size: 18px;
     color: #e0e0e0b7 ;
 }
@@ -230,7 +259,7 @@ section{
     background: transparent;
     border: 1px solid #333;
     color: #e0e0e0b7;
-    padding: 10px 15px;
+    padding: 7px 14px;
     border-radius: 10px;
     cursor: pointer;
     border: 1px solid #ffc10752;
@@ -238,7 +267,7 @@ section{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 550;
     transition: background-color 0.3s;
-    
+    font-size: 1.4vw;
 }
 .inp input:focus{
      border: 1px solid #ffbf00;
